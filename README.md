@@ -29,7 +29,7 @@ You need to visit www.construct.net/ on your browser to open the c3 game engine.
 
 Here are some related projects
 
-[Awesome README](https://www.taptap.cn/moment/592690704132607834)
+[比赛相关](https://www.taptap.cn/moment/592690704132607834)
 
 
 ![Logo](https://avatars.githubusercontent.com/u/32768062?v=4)
