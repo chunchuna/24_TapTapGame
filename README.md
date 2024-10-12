@@ -18,7 +18,7 @@ developed based on ts/c3 game engine
 
 #### How to run a project？
 
-You need to visit www.construct.net/ on your browser to open the c3 game engine. The current version of the engine is R401.
+You need to visit www.construct.net/ on your browser to open the c3 game engine. The current version of the engine is R410.
 
 
 ## Features
