@@ -4,8 +4,29 @@
 	"name": "A Balloon For TapTap",
 	"runtime": "c3",
 	"useWorker": "auto",
-	"bundleAddons": false,
+	"bundleAddons": true,
 	"usedAddons": [
+		{
+			"type": "plugin",
+			"id": "Browser",
+			"name": "浏览器",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Keyboard",
+			"name": "键盘",
+			"author": "Scirra",
+			"bundled": false
+		},
+		{
+			"type": "plugin",
+			"id": "Mouse",
+			"name": "鼠标",
+			"author": "Scirra",
+			"bundled": false
+		},
 		{
 			"type": "plugin",
 			"id": "Sprite",
@@ -45,9 +66,12 @@
 	"uniqueId": "1fs4jjsnsmv",
 	"objectTypes": {
 		"items": [
-			"地板",
-			"气球",
-			"绳子"
+			"Ground",
+			"Ball",
+			"BallRope",
+			"Keyboard",
+			"Mouse",
+			"Web"
 		],
 		"subfolders": []
 	},
@@ -59,7 +83,8 @@
 	},
 	"layouts": {
 		"items": [
-			"游戏"
+			"游戏",
+			"HUD"
 		],
 		"subfolders": []
 	},
@@ -208,11 +233,11 @@
 		"webgpu": "auto",
 		"gpuPreference": "high-performance",
 		"scriptsType": "module",
-		"framerateMode": "vsync",
+		"framerateMode": "unlimited-frame",
 		"sampling": "nearest",
-		"downscaling": "medium",
-		"renderingMode": "auto",
-		"anisotropicFiltering": "auto",
+		"downscaling": "low",
+		"renderingMode": "2d",
+		"anisotropicFiltering": "16x",
 		"zNear": 1,
 		"zFar": 10000,
 		"maxSpriteSheetSize": 2048,

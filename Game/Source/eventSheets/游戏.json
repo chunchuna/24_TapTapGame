@@ -7,7 +7,215 @@
 			"title": "气球",
 			"description": "",
 			"isActiveOnStart": true,
-			"children": [],
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 615558991443621
+						}
+					],
+					"actions": [
+						{
+							"id": "set-angle-of-gravity",
+							"objectClass": "Ball",
+							"sid": 953454033939956,
+							"behaviorType": "平台",
+							"parameters": {
+								"angle": "-90"
+							}
+						},
+						{
+							"id": "set-jump-strength",
+							"objectClass": "Ball",
+							"sid": 984192161693199,
+							"behaviorType": "平台",
+							"parameters": {
+								"jump-strength": "150"
+							}
+						},
+						{
+							"id": "set-double-jump",
+							"objectClass": "Ball",
+							"sid": 575849073983209,
+							"behaviorType": "平台",
+							"parameters": {
+								"state": "enabled"
+							}
+						}
+					],
+					"sid": 939715903029890
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 882114257321254,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [],
+					"sid": 781107228861627,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 123517031412674,
+									"parameters": {
+										"first-value": "Ball.平台.GravityAngle",
+										"comparison": 0,
+										"second-value": "270"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Ball",
+									"sid": 906298585539248,
+									"behaviorType": "平台",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 857959863774199
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 930150553234412,
+									"parameters": {
+										"first-value": "Ball.平台.GravityAngle",
+										"comparison": 0,
+										"second-value": "-270"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Ball",
+									"sid": 334166983495596,
+									"behaviorType": "平台",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 699459889596772
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 718571716697047,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [],
+					"sid": 190109146854485,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 597373821710763,
+									"parameters": {
+										"first-value": "Ball.平台.GravityAngle",
+										"comparison": 0,
+										"second-value": "270"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Ball",
+									"sid": 558054278038720,
+									"behaviorType": "平台",
+									"parameters": {
+										"control": "left"
+									}
+								}
+							],
+							"sid": 644220012975396
+						},
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 311270916927304,
+									"parameters": {
+										"first-value": "Ball.平台.GravityAngle",
+										"comparison": 0,
+										"second-value": "-270"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "simulate-control",
+									"objectClass": "Ball",
+									"sid": 956789840126726,
+									"behaviorType": "平台",
+									"parameters": {
+										"control": "right"
+									}
+								}
+							],
+							"sid": 963129725479079
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-key-pressed",
+							"objectClass": "Keyboard",
+							"sid": 590528815652804,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Ball",
+							"sid": 289825161607010,
+							"behaviorType": "平台",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 383611016762587
+				}
+			],
 			"sid": 523946074987160
 		},
 		{
@@ -22,7 +230,7 @@
 					"conditions": [
 						{
 							"id": "is-moving",
-							"objectClass": "气球",
+							"objectClass": "Ball",
 							"sid": 713137085382394,
 							"behaviorType": "平台"
 						}
@@ -30,7 +238,7 @@
 					"actions": [
 						{
 							"id": "set-active",
-							"objectClass": "绳子",
+							"objectClass": "BallRope",
 							"sid": 896881135203814,
 							"behaviorType": "正弦运动",
 							"parameters": {
@@ -60,7 +268,7 @@
 						},
 						{
 							"id": "set-active",
-							"objectClass": "绳子",
+							"objectClass": "BallRope",
 							"sid": 881703929492500,
 							"behaviorType": "正弦运动",
 							"parameters": {
@@ -72,6 +280,38 @@
 				}
 			],
 			"sid": 739021077826887
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Debug",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "every-tick",
+							"objectClass": "System",
+							"sid": 466459159867398
+						}
+					],
+					"actions": [
+						{
+							"id": "log",
+							"objectClass": "Web",
+							"sid": 513899746917506,
+							"parameters": {
+								"type": "log",
+								"message": "Ball.平台.GravityAngle"
+							}
+						}
+					],
+					"sid": 868165023945675
+				}
+			],
+			"sid": 911215289275423
 		}
 	],
 	"sid": 485873319699788

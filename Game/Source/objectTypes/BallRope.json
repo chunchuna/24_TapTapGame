@@ -1,19 +1,14 @@
 {
-	"name": "气球",
+	"name": "BallRope",
 	"plugin-id": "Sprite",
-	"sid": 419942371769109,
+	"sid": 329752105436818,
 	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [
 		{
-			"behaviorId": "Platform",
-			"name": "平台",
-			"sid": 436353135191704
-		},
-		{
-			"behaviorId": "scrollto",
-			"name": "镜头跟随",
-			"sid": 202044298595941
+			"behaviorId": "Sin",
+			"name": "正弦运动",
+			"sid": 753629786391163
 		}
 	],
 	"effectTypes": [],
@@ -22,21 +17,21 @@
 			{
 				"frames": [
 					{
-						"width": 205,
-						"height": 205,
-						"originX": 0.5317073170731708,
-						"originY": 0.5317073170731708,
+						"width": 9,
+						"height": 195,
+						"originX": 0.3333333333333333,
+						"originY": 0.020512820512820513,
 						"originalSource": "",
 						"exportFormat": "lossless",
 						"exportQuality": 0.8,
 						"fileType": "image/png",
-						"imageSpriteId": 3993998,
+						"imageSpriteId": 3626189,
 						"useCollisionPoly": true,
 						"duration": 1,
 						"tag": ""
 					}
 				],
-				"sid": 811694002677649,
+				"sid": 953658611935544,
 				"name": "Animation 1",
 				"isLooping": false,
 				"isPingPong": false,

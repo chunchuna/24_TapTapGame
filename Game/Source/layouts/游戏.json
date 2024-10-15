@@ -2,12 +2,12 @@
 	"name": "游戏",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Game",
 			"overriden": 0,
 			"subLayers": [],
 			"instances": [
 				{
-					"type": "地板",
+					"type": "Ground",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -37,8 +37,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1622,
-						"y": 1252,
+						"x": 2938,
+						"y": 3414,
 						"width": 1210,
 						"height": 100,
 						"originX": 0.5,
@@ -54,7 +54,7 @@
 					}
 				},
 				{
-					"type": "地板",
+					"type": "Ground",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -84,9 +84,9 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1579,
-						"y": 559,
-						"width": 1167,
+						"x": 2922,
+						"y": 2721,
+						"width": 1221,
 						"height": 105,
 						"originX": 0.5,
 						"originY": 0.5,
@@ -101,7 +101,7 @@
 					}
 				},
 				{
-					"type": "气球",
+					"type": "Ball",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -119,8 +119,8 @@
 								"max-speed": 330,
 								"acceleration": 1500,
 								"deceleration": 1500,
-								"jump-strength": 650,
-								"gravity": -50,
+								"jump-strength": 50,
+								"gravity": 50,
 								"max-fall-speed": 1000,
 								"double-jump": false,
 								"jump-sustain": 0,
@@ -133,6 +133,201 @@
 								"enabled": true
 							}
 						}
+					},
+					"template": {
+						"mode": "template",
+						"templateName": "气球老大",
+						"sourceTemplateName": "",
+						"replicaHierarchyInSyncWithTemplate": false,
+						"templatePropagateHierarchyChanges": true,
+						"replicaIgnoreTemplateHierarchyChanges": false,
+						"components": [
+							{
+								"id": "plugin",
+								"component": [
+									{
+										"key": "plugin",
+										"state": [
+											[
+												"initially-visible",
+												true
+											],
+											[
+												"initial-animation",
+												true
+											],
+											[
+												"initial-frame",
+												true
+											],
+											[
+												"enable-collisions",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "instance-variable",
+								"component": [
+									{
+										"key": "instance-variable",
+										"state": []
+									}
+								]
+							},
+							{
+								"id": "behavior",
+								"component": [
+									{
+										"key": "平台",
+										"state": [
+											[
+												"max-speed",
+												true
+											],
+											[
+												"acceleration",
+												true
+											],
+											[
+												"deceleration",
+												true
+											],
+											[
+												"jump-strength",
+												true
+											],
+											[
+												"gravity",
+												true
+											],
+											[
+												"max-fall-speed",
+												true
+											],
+											[
+												"double-jump",
+												true
+											],
+											[
+												"jump-sustain",
+												true
+											],
+											[
+												"default-controls",
+												true
+											],
+											[
+												"enabled",
+												true
+											]
+										]
+									},
+									{
+										"key": "镜头跟随",
+										"state": [
+											[
+												"enabled",
+												true
+											]
+										]
+									}
+								]
+							},
+							{
+								"id": "effect",
+								"component": []
+							},
+							{
+								"id": "world-instance",
+								"component": [
+									{
+										"key": "world-instance",
+										"state": [
+											[
+												"x",
+												false
+											],
+											[
+												"y",
+												false
+											],
+											[
+												"z",
+												true
+											],
+											[
+												"w",
+												true
+											],
+											[
+												"h",
+												true
+											],
+											[
+												"a",
+												true
+											],
+											[
+												"o",
+												true
+											],
+											[
+												"c",
+												true
+											],
+											[
+												"sx",
+												true
+											],
+											[
+												"sy",
+												true
+											],
+											[
+												"bm",
+												true
+											],
+											[
+												"twpx",
+												true
+											],
+											[
+												"twpy",
+												true
+											],
+											[
+												"twpz",
+												true
+											],
+											[
+												"twpw",
+												true
+											],
+											[
+												"twph",
+												true
+											],
+											[
+												"twpa",
+												true
+											],
+											[
+												"dwp",
+												true
+											],
+											[
+												"ssm",
+												true
+											]
+										]
+									}
+								]
+							}
+						],
+						"replicasUIDs": null
 					},
 					"sceneGraphData": {
 						"parent-uid": null,
@@ -189,8 +384,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1619,
-						"y": 889,
+						"x": 2935,
+						"y": 3051,
 						"width": 109.5308175811721,
 						"height": 109.5308175811721,
 						"originX": 0.5317073170731708,
@@ -206,7 +401,7 @@
 					}
 				},
 				{
-					"type": "绳子",
+					"type": "BallRope",
 					"properties": {
 						"initially-visible": true,
 						"initial-animation": "Animation 1",
@@ -272,8 +467,8 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 1597,
-						"y": 924.2974358974359,
+						"x": 2913,
+						"y": 3086,
 						"width": 9,
 						"height": 112,
 						"originX": 0.3333333333333333,
@@ -317,6 +512,74 @@
 			"blendMode": "normal",
 			"zElevation": 0,
 			"global": false
+		},
+		{
+			"name": "Ui",
+			"overriden": 0,
+			"subLayers": [],
+			"instances": [],
+			"sid": 338053641145038,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Hud",
+			"overriden": 1,
+			"subLayers": [],
+			"instances": [],
+			"sid": 684844658389530,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"isInitiallyInteractive": true,
+			"isHTMLElementsLayer": false,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
 		}
 	],
 	"scene-graphs-folder-root": {
@@ -326,8 +589,8 @@
 	"sid": 689451280547721,
 	"nonworld-instances": [],
 	"effectTypes": [],
-	"width": 3840,
-	"height": 2160,
+	"width": 6000,
+	"height": 6000,
 	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
