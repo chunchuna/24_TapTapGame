@@ -9,28 +9,21 @@
 		{
 			"type": "plugin",
 			"id": "Sprite",
-			"name": "Sprite",
+			"name": "精灵",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "Platform",
-			"name": "Platform",
-			"author": "Scirra",
-			"bundled": false
-		},
-		{
-			"type": "behavior",
-			"id": "scrollto",
-			"name": "Scroll To",
+			"name": "平台",
 			"author": "Scirra",
 			"bundled": false
 		},
 		{
 			"type": "behavior",
 			"id": "solid",
-			"name": "Solid",
+			"name": "实体",
 			"author": "Scirra",
 			"bundled": false
 		}
@@ -38,8 +31,9 @@
 	"uniqueId": "1fs4jjsnsmv",
 	"objectTypes": {
 		"items": [
+			"地板",
 			"气球",
-			"地板"
+			"绳子"
 		],
 		"subfolders": []
 	},
@@ -51,13 +45,13 @@
 	},
 	"layouts": {
 		"items": [
-			"Layout 1"
+			"游戏"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"Event sheet 1"
+			"游戏"
 		],
 		"subfolders": []
 	},
