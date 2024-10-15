@@ -1,5 +1,78 @@
 {
 	"name": "游戏",
-	"events": [],
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "气球",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 523946074987160
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "气球绳子",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "气球",
+							"sid": 713137085382394,
+							"behaviorType": "平台"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-active",
+							"objectClass": "绳子",
+							"sid": 896881135203814,
+							"behaviorType": "正弦运动",
+							"parameters": {
+								"state": "active"
+							}
+						}
+					],
+					"sid": 923567923574455
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 251026279699806
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 451130305890743,
+							"parameters": {
+								"seconds": "random(0.2,1)"
+							}
+						},
+						{
+							"id": "set-active",
+							"objectClass": "绳子",
+							"sid": 881703929492500,
+							"behaviorType": "正弦运动",
+							"parameters": {
+								"state": "inactive"
+							}
+						}
+					],
+					"sid": 598477432297767
+				}
+			],
+			"sid": 739021077826887
+		}
+	],
 	"sid": 485873319699788
 }

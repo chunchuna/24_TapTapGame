@@ -9,6 +9,11 @@
 			"behaviorId": "Platform",
 			"name": "平台",
 			"sid": 436353135191704
+		},
+		{
+			"behaviorId": "scrollto",
+			"name": "镜头跟随",
+			"sid": 202044298595941
 		}
 	],
 	"effectTypes": [],

@@ -37,10 +37,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 606,
-						"y": 973,
+						"x": 1622,
+						"y": 1252,
 						"width": 1210,
-						"height": 250,
+						"height": 100,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -84,10 +84,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 591,
-						"y": 133,
+						"x": 1579,
+						"y": 559,
 						"width": 1167,
-						"height": 250,
+						"height": 105,
 						"originX": 0.5,
 						"originY": 0.5,
 						"color": [
@@ -127,6 +127,56 @@
 								"default-controls": true,
 								"enabled": true
 							}
+						},
+						"镜头跟随": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": null,
+						"uid": 2,
+						"children": [
+							{
+								"uid": 5,
+								"flags": {
+									"x": true,
+									"y": true,
+									"z": true,
+									"w": true,
+									"h": true,
+									"a": true,
+									"o": false,
+									"v": false,
+									"d": true,
+									"sm": "normal"
+								}
+							}
+						],
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 0,
+							"transformH": 0,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
 						}
 					},
 					"instanceFolderItem": {
@@ -139,10 +189,10 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 447,
-						"y": 446,
-						"width": 205,
-						"height": 205,
+						"x": 1619,
+						"y": 889,
+						"width": 109.5308175811721,
+						"height": 109.5308175811721,
 						"originX": 0.5317073170731708,
 						"originY": 0.5317073170731708,
 						"color": [
@@ -168,7 +218,50 @@
 					"sid": 407111184238501,
 					"tags": "",
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"正弦运动": {
+							"properties": {
+								"movement": "angle",
+								"wave": "sine",
+								"period": 1.5,
+								"period-random": 1,
+								"period-offset": 0.2,
+								"period-offset-random": 2,
+								"magnitude": 3,
+								"magnitude-random": 5,
+								"enabled": true,
+								"live-preview": false
+							}
+						}
+					},
+					"sceneGraphData": {
+						"parent-uid": 2,
+						"uid": 5,
+						"flags": {
+							"x": true,
+							"y": true,
+							"z": true,
+							"w": true,
+							"h": true,
+							"a": true,
+							"o": false,
+							"v": false,
+							"d": true,
+							"sm": "normal"
+						},
+						"preview": {
+							"transformX": 0,
+							"transformY": 0,
+							"transformZElevation": 0,
+							"transformW": 2.220446049250313e-16,
+							"transformH": 2.220446049250313e-16,
+							"transformA": 0,
+							"transformSX": 0,
+							"transformSY": 0,
+							"transformO": 0,
+							"previewSceneGraph": false
+						}
+					},
 					"instanceFolderItem": {
 						"sid": 407111184238501,
 						"expanded": true,
@@ -179,12 +272,12 @@
 					"showing": true,
 					"locked": false,
 					"world": {
-						"x": 420,
-						"y": 607,
+						"x": 1597,
+						"y": 924.2974358974359,
 						"width": 9,
-						"height": 195,
-						"originX": 3.7777777777777777,
-						"originY": 0.46153846153846156,
+						"height": 112,
+						"originX": 0.3333333333333333,
+						"originY": 0.020512820512820513,
 						"color": [
 							1,
 							1,
@@ -235,7 +328,7 @@
 	"effectTypes": [],
 	"width": 3840,
 	"height": 2160,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
