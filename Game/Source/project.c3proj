@@ -71,7 +71,10 @@
 			"BallRope",
 			"Keyboard",
 			"Mouse",
-			"Web"
+			"Web",
+			"尖刺",
+			"弹簧",
+			"门"
 		],
 		"subfolders": []
 	},

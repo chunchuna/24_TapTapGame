@@ -1,0 +1,51 @@
+{
+	"name": "门",
+	"plugin-id": "Sprite",
+	"sid": 125796983090339,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 454,
+						"height": 340,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"fileType": "image/png",
+						"imageSpriteId": 1185413,
+						"collisionPoly": {
+							"points": [
+								0.2555066079295154,
+								0.09117647058823529,
+								0.7092511013215859,
+								0.10882352941176471,
+								0.6960352422907489,
+								0.9911764705882353,
+								0.2422907488986784,
+								0.9735294117647059
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 943147106902893,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

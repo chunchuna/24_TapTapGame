@@ -30,10 +30,10 @@
 						{
 							"id": "set-jump-strength",
 							"objectClass": "Ball",
-							"sid": 984192161693199,
+							"sid": 813787529407486,
 							"behaviorType": "平台",
 							"parameters": {
-								"jump-strength": "150"
+								"jump-strength": "500"
 							}
 						},
 						{
@@ -43,6 +43,24 @@
 							"behaviorType": "平台",
 							"parameters": {
 								"state": "enabled"
+							}
+						},
+						{
+							"id": "set-gravity",
+							"objectClass": "Ball",
+							"sid": 465450575691099,
+							"behaviorType": "平台",
+							"parameters": {
+								"gravity": "800"
+							}
+						},
+						{
+							"id": "set-jump-sustain",
+							"objectClass": "Ball",
+							"sid": 369832296731036,
+							"behaviorType": "平台",
+							"parameters": {
+								"jump-sustain": "50"
 							}
 						}
 					],
@@ -214,6 +232,102 @@
 						}
 					],
 					"sid": 383611016762587
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Ball",
+							"sid": 763301785329875,
+							"parameters": {
+								"object": "尖刺"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "instance-signal",
+							"objectClass": "Ball",
+							"sid": 665696639887326,
+							"parameters": {
+								"tag": "\"boom\""
+							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Ball",
+							"sid": 724782715749842
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 717653374597017,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 937471005404727
+						}
+					],
+					"sid": 740930566557137
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Ball",
+							"sid": 817291533455688,
+							"parameters": {
+								"object": "门"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 565279716750606,
+							"parameters": {
+								"seconds": "1.5"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 750590657077377
+						}
+					],
+					"sid": 195176431274995
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Ball",
+							"sid": 959001386534887,
+							"parameters": {
+								"object": "弹簧"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-jump-strength",
+							"objectClass": "Ball",
+							"sid": 119228285644732,
+							"behaviorType": "平台",
+							"parameters": {
+								"jump-strength": "800"
+							}
+						}
+					],
+					"sid": 156924071569442
 				}
 			],
 			"sid": 523946074987160
@@ -261,9 +375,9 @@
 						{
 							"id": "wait",
 							"objectClass": "System",
-							"sid": 451130305890743,
+							"sid": 342891611793474,
 							"parameters": {
-								"seconds": "random(0.2,1)"
+								"seconds": "random(0.6,1.4)"
 							}
 						},
 						{
