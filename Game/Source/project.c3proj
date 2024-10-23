@@ -65,18 +65,30 @@
 	],
 	"uniqueId": "1fs4jjsnsmv",
 	"objectTypes": {
-		"items": [
-			"Ground",
-			"Ball",
-			"BallRope",
-			"Keyboard",
-			"Mouse",
-			"Web",
-			"尖刺",
-			"弹簧",
-			"门"
-		],
-		"subfolders": []
+		"items": [],
+		"subfolders": [
+			{
+				"items": [
+					"Keyboard",
+					"Mouse",
+					"Web"
+				],
+				"subfolders": [],
+				"name": "System"
+			},
+			{
+				"items": [
+					"Ball",
+					"BallRope",
+					"Door",
+					"Ground",
+					"Spikes",
+					"Spring"
+				],
+				"subfolders": [],
+				"name": "Object"
+			}
+		]
 	},
 	"autosaveData": null,
 	"containers": [],
@@ -86,14 +98,15 @@
 	},
 	"layouts": {
 		"items": [
-			"游戏",
+			"Level",
 			"HUD"
 		],
 		"subfolders": []
 	},
 	"eventSheets": {
 		"items": [
-			"游戏"
+			"Level",
+			"Global"
 		],
 		"subfolders": []
 	},

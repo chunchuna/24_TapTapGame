@@ -1,5 +1,5 @@
 {
-	"name": "游戏",
+	"name": "Level",
 	"events": [
 		{
 			"eventType": "group",
@@ -241,7 +241,7 @@
 							"objectClass": "Ball",
 							"sid": 763301785329875,
 							"parameters": {
-								"object": "尖刺"
+								"object": "Spikes"
 							}
 						}
 					],
@@ -279,11 +279,36 @@
 					"eventType": "block",
 					"conditions": [
 						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Ball",
+							"sid": 435613714365686,
+							"parameters": {
+								"object": "Spring"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-jump-strength",
+							"objectClass": "Ball",
+							"sid": 161903330148397,
+							"behaviorType": "平台",
+							"parameters": {
+								"jump-strength": "800"
+							}
+						}
+					],
+					"sid": 997455584199982
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
 							"id": "is-overlapping-another-object",
 							"objectClass": "Ball",
 							"sid": 817291533455688,
 							"parameters": {
-								"object": "门"
+								"object": "Door"
 							}
 						}
 					],
@@ -303,31 +328,6 @@
 						}
 					],
 					"sid": 195176431274995
-				},
-				{
-					"eventType": "block",
-					"conditions": [
-						{
-							"id": "on-collision-with-another-object",
-							"objectClass": "Ball",
-							"sid": 959001386534887,
-							"parameters": {
-								"object": "弹簧"
-							}
-						}
-					],
-					"actions": [
-						{
-							"id": "set-jump-strength",
-							"objectClass": "Ball",
-							"sid": 119228285644732,
-							"behaviorType": "平台",
-							"parameters": {
-								"jump-strength": "800"
-							}
-						}
-					],
-					"sid": 156924071569442
 				}
 			],
 			"sid": 523946074987160
@@ -426,6 +426,38 @@
 				}
 			],
 			"sid": 911215289275423
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Level",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 572759874835365
+						}
+					],
+					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 244354829742026,
+							"parameters": {
+								"variable": "GameType",
+								"value": "\"Level\""
+							}
+						}
+					],
+					"sid": 122163615740853
+				}
+			],
+			"sid": 887007215040603
 		}
 	],
 	"sid": 485873319699788
