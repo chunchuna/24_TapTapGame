@@ -261,7 +261,7 @@
 		"preloadSounds": true,
 		"cordovaiOSScheme": "app",
 		"cordovaAndroidScheme": "https",
-		"autoReloadScriptsOnPreview": false,
+		"autoReloadScriptsOnPreview": true,
 		"exportFileStructure": "folders",
 		"uidAllocationMode": "increment"
 	},

@@ -214,9 +214,9 @@
 						{
 							"id": "on-key-pressed",
 							"objectClass": "Keyboard",
-							"sid": 590528815652804,
+							"sid": 188516204748442,
 							"parameters": {
-								"key": 87
+								"key": 32
 							}
 						}
 					],
