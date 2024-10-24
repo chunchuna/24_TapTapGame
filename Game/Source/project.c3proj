@@ -101,7 +101,17 @@
 			"Level",
 			"HUD"
 		],
-		"subfolders": []
+		"subfolders": [
+			{
+				"items": [
+					"1",
+					"2",
+					"3"
+				],
+				"subfolders": [],
+				"name": "LevelChid"
+			}
+		]
 	},
 	"eventSheets": {
 		"items": [
